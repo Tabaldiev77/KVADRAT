@@ -29,7 +29,7 @@ class VerifyEmail(View):
         # Your verification logic here
         return HttpResponse("Email verified")
 
-
+      
 class GetUserAPIView(ListAPIView, UpdateAPIView, RetrieveAPIView, DestroyAPIView):
     queryset = CustomUser.objects.all()
     serializer_class = UserProfileSerializer
